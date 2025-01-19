@@ -1,6 +1,4 @@
 import { defineConfig } from "vitest/config";
-import { resolve } from "node:path";
-import tsconfig from "./tsconfig.json" with { type: "json" };
 
 export default defineConfig({
     test: {
