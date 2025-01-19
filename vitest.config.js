@@ -4,8 +4,7 @@ import tsconfig from "./tsconfig.json" with { type: "json" };
 
 export default defineConfig({
     test: {
-        include: [ "src/**/*.test.{ts,tsx}" ],   // Doesn't work (JSX framework loaded twice)
-        // include: [ "lib/**/*.test.js" ],      // Works (JSX framework only loaded once)
+        include: [ "src/**/*.test.{ts,tsx}" ],
         browser: {
             enabled: true,
             provider: "playwright",
