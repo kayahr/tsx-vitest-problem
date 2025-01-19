@@ -5,6 +5,6 @@ import { Component } from "./Component.js";
 describe("render", () => {
     it("renders JSX element into DOM node", () => {
         const node = render(<Component />);
-        expect(node.outerHTML).toBe("<div></div>");
+        expect(node.outerHTML).toBe("<div>Works!</div>");
     });
 });
