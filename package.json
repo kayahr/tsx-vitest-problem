@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json.schemastore.org/package",
+    "name": "jsx-vitest-bug",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "prepare": "tsc",
+        "test": "playwright install chromium && vitest run"
+    },
+    "devDependencies": {
+        "@vitest/browser": "3.0.2",
+        "@vitest/coverage-v8": "3.0.2",
+        "playwright": "1.49.1",
+        "typescript": "5.7.3",
+        "vitest": "3.0.2"
+    },
+    "dependencies": {
+        "jsx-framework-of-the-day": "file:jsx-framework-of-the-day-0.0.1.tgz"
+    }
+}
