@@ -1,12 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { render } from "jsx-framework-of-the-day";
+import { Component } from "./Component.js";
 
 describe("render", () => {
     it("renders JSX element into DOM node", () => {
-        function Test() {
-            return <div></div>;
-        }
-        const node = render(<Test />);
+        const node = render(<Component />);
         expect(node.outerHTML).toBe("<div></div>");
     });
 });
